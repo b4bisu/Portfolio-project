@@ -19,22 +19,84 @@ h2{
     color: #BE3044;
 }
 
-#title{
+h3{
     font-size: 40px;
     font-family: sans-serif;
     font-weight: 500;
-    text-align: center;
     padding-top: 70px;
+    text-align: center;
+}
+
+#navbar{
+    background-color:#BE3044;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100vw;
+    padding: 20px;
+    border-bottom: solid black 1px;
+}
+.nav-link{
+    font-size: 20px;
+    font-weight: 5px;
+    font-family: sans-serif;
+    padding: 35px;
+    text-decoration: none;
+    color: white;
+}
+#welcome-section{
+    height: 100vh;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
 }
 
 section{
     background-color: #45567D;
-    height: 100vh;
     width: 100vw;
+    overflow: hidden;
+}
+
+#project-links{
+    max-width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+#project-links > a {
+    text-decoration: none;
+}
+
+.project-tile{
+    width: 300px;
+    height: 300px;
+    border: 1px solid rgb(46, 45, 45);
+}
+
+figcaption{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: sans-serif;
+    padding: 20px;
+    background-color: rgb(48,56,64);
+}
+
+#show-button{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: sans-serif;
+    padding: 20px;
+    background-color: rgb(48,56,64);
 }
 
 #footer{
@@ -43,39 +105,18 @@ section{
 
 @media(max-width: 576px){
     body{
-        background-color:  #27262A;;
+        background-color:  #27262A;
     }
-}
-
-@media(min-width: 576px){
-    #navbar{
-        background-color:#BE3044;
+    #project-links{
         display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        position: fixed;
-        width: 100%;
-        padding: 20px;
-        border-bottom: solid black 1px;
-    }
-    .nav-link{
-        font-size: 20px;
-        font-weight: 5px;
-        font-family: sans-serif;
-        padding: 35px;
-        text-decoration: none;
-        color: white;
-    }
-    #welcome-section{
-        height: 100vh;
-        display: flex; 
         flex-direction: column;
-        justify-content: center;
-        align-items: center;  
+        justify-content: space-evenly;
+        align-items: center;
     }
+
     .project-tile{
-        width: 200px;
-        height: 200px;
-        border: 2px solid black;
+        width: 500px;
+        height: 500px;
+        border: 1px solid rgb(46, 45, 45);
     }
 }
